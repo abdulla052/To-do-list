@@ -1,0 +1,64 @@
+.card {
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding-bottom: 10px;
+  margin: 10px;
+  text-align: left;
+  max-width: 230px;
+  display: inline-block;
+}
+
+.profile {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5% 5% 0 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.bottom-card {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: hsl(0, 0%, 20%);
+  cursor: pointer;
+}
+
+.card h3:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: hsl(0, 0%, 30%);
+  font-size: 13px;
+  word-break: keep-all;
+}
+
+.card button {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.card .add-btn {
+  background-color: rgb(235, 245, 255);
+  color: rgb(56, 56, 245);
+}
+
+.card .remove-btn {
+  background-color: rgb(228, 230, 235);
+  color: black;
+}
+

@@ -1,0 +1,159 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    /* background-color: #333; */
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.heading {
+    color: white;
+}
+
+.inputingContainer {
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 20px;
+}
+
+.inputTodo {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+.inputTodo,
+.addBtn {
+    padding: 8px 5px;
+}
+
+.addBtn {
+    background-color: rgb(52, 186, 52);
+    color: white;
+    padding-inline: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style-type: none;
+    width: 100%;
+}
+
+.listLine {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-left: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-in-out 0.2s;
+    position: relative;
+}
+
+.listLine:hover {
+    transform: scale(1.01);
+}
+
+.leftOfList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doneCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.isChecked {
+    background-color: #333;
+    color: white;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+
+.listBtnsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.listBtns {
+    height: 25px;
+    margin-right: 3px;
+}
+
+.listBtns:hover {
+    opacity: 0.85;
+}
+
+.deleteBtn {
+    background-color: rgb(232, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.orderBtn {
+    background-color: rgb(0, 132, 255);
+    border: none;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 400px;
+    }
+}
