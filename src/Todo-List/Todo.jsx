@@ -4,10 +4,10 @@ import style from "./Todo.module.css";
 const Todo = () => {
   const [list, setList] = useState([
     {
-      text: "Your todo list aduafa efw iquhef",
+      text: "Your todo list",
       check: false,
     },
-    { text: "Another} todo", check: false },
+    { text: "Another todo", check: false },
   ]);
 
   const [newList, setNewList] = useState("");
